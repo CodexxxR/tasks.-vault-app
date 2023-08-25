@@ -18,7 +18,6 @@ const TaskForm = ({ onClose }) => {
 
   const isEdit = location.state?.isEdit;
   const taskId = location.state?.task_id;
-  console.log(taskId);
   useEffect(() => {
     if (isEdit && taskId) {
       fetchTaskDetails(taskId);
@@ -70,7 +69,6 @@ const TaskForm = ({ onClose }) => {
   };
 
   const handleSubmit = async (e) => {
-    // Authenticate the user and get the token
     e.preventDefault();
     const user = firebase.auth().currentUser;
     if (!user) {
@@ -88,7 +86,6 @@ const TaskForm = ({ onClose }) => {
       percentage_done: percentageDone,
       favourite: false,
     };
-    console.log(dueDate);
     setTitle("");
     setDescription("");
     setPercentageDone(0);

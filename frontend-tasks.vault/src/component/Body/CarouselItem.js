@@ -119,7 +119,7 @@ const CarouselItem = ({
               onChange={() => onSelect(task.task_id)}
             ></input>
           </div>
-          <div class="task-title">{task.title}</div>
+          <div className="task-title">{task.title}</div>
           <div className="labels">
             <BiLabel size={20} />
             <span>

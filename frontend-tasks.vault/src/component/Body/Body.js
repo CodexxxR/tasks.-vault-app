@@ -52,7 +52,6 @@ const Body = ({ searchResults, showOnlyFav }) => {
     }
   }, [searchResults]);
 
-  console.log(showOnlyFav);
   const tasksToDisplay = showOnlyFav
     ? tasks
     : tasks.filter((task) => task.favourite);

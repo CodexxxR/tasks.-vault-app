@@ -8,15 +8,6 @@ import connectToDatabase from "./db.js";
 import authenticate from "./authenticate.js";
 import { v4 as uuidv4 } from "uuid";
 
-// const express = require("express");
-// const bodyParser = require("body-parser");
-// const cors = require("cors");
-// const admin = require("firebase-admin");
-
-// const connectToDatabase = require("./db");
-// const authenticate = require("./authenticate");
-// const { v4: uuidv4 } = require("uuid");
-
 let serviceAccount = null;
 try {
   const serviceAccountObj = {
